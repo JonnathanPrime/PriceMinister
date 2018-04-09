@@ -32,16 +32,8 @@ h1, h2, h3 {
 
 }
 
-/* .clear::after {
-	clear: both;
-	content: ".";
-	display: block;
-	height: 0;
-	line-height: 0;
-	visibility: hidden;
-} */
-
 /* HEADER */
+
 header {
 	background-color: #fff;
 }
@@ -114,6 +106,23 @@ section {
 #product_list {
 	width: 38%;
 	vertical-align: top;
+}
+
+#ad_list nav {
+	display: inline-block;
+	font-size: 0.8em;
+
+}
+
+#ad_list img {
+	width: 30%;
+	border-radius: 50%;
+	background-color: #c6dfea; 
+}
+
+#product_list nav {
+	border: 1px;
+	border-color: black;
 }
 
 .flex {
