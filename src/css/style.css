@@ -23,8 +23,9 @@ h1, h2, h3 {
 	font-weight: normal;
 }
 
-
-.container {
+.container,
+.product,
+.product_detail {
 	max-width: 90%;
 	margin: 0 auto;
 	padding: 25px;
@@ -32,16 +33,8 @@ h1, h2, h3 {
 
 }
 
-/* .clear::after {
-	clear: both;
-	content: ".";
-	display: block;
-	height: 0;
-	line-height: 0;
-	visibility: hidden;
-} */
-
 /* HEADER */
+
 header {
 	background-color: #fff;
 }
@@ -59,17 +52,6 @@ header nav a {
 	font-family: "Candal";
 	font-size: 1.4em;
 }
-
-/* header nav a:hover {
-	color: #fb8a9b;
-} */
-
-/* header nav a .fa {
-	display: block;
-	text-align: center;
-	color: #fb8a9b;
-	font-size: 1.5em;
-} */
 
 header nav a:hover .fa {
 	color: #203e4d;
@@ -96,8 +78,8 @@ main {
 .cover_ad_list,
 .cover_product_list {
 	background-color: #fff;
-	padding: 5%;
 	margin: 5%;
+	border-radius: 5%;
 }
 
 section {
@@ -116,38 +98,51 @@ section {
 	vertical-align: top;
 }
 
-.flex {
-	display: flex;
-	flex-direction: row;
+#ad_list nav {
+	display: inline-block;
+	font-size: 0.8em;
+	vertical-align: top;
+
 }
 
-.host {
-	padding: 15px;
+#ad_list img {
+	width: 20%;
+	border-radius: 50%;
+	background-color: #c6dfea; 
 }
 
-.host h3 {
-	font-family: "Candal", Arial;
+#product_list .service nav div{
+	display: inline-grid;
+	width: 32%;
 	text-align: center;
-	font-size: 1.2em;
-	color: #fb8a9b;
-	padding: 10px 0 0;
 }
-
-.host i {
-	display: block;
+#product_list .service nav{
+	background-color: black;
+	padding: 4%;
+}
+#product_list .service nav img{
+	margin-left: 40%;
+}
+#product_list .product .product_price {
+	width: 30%;
+}
+#product_list .product {
+	display: inline-flex;
+}
+#product_list .product img{
+	width: 70%;
+}
+#product_list .product h1{
 	text-align: center;
-	font-size: 3em;
-	color: #fb8a9b;
-	margin: 25px 0 0;
+	font-size: 1.9em;
 }
-
-.prix {
-	text-align: center;
-	font-weight: bold;
-	font-size: 1.4em;
-	color: #fb8a9b;
+#product_list .product a{
+	vertical-align: text-top;
+	padding: 9%;
+	background-color: #ff9900;
+	border-radius: 5%;
+	color: #fff;
 }
-
 
 /* RESPONSIVE */
 @media screen and (max-width: 960px) {
